@@ -28,26 +28,8 @@ The core of this platform is a highly available Amazon EKS cluster deployed with
 * **Professional Git Workflow:** The `main` branch is protected, requiring all changes to be made via **Pull Requests**. This enforces code reviews and prevents direct, un-audited changes to the infrastructure.
 
 ---
+<img width="330" height="366" alt="image" src="https://github.com/user-attachments/assets/f0c51bd9-ad57-465c-b005-35c3f4ec957f" />
 
-## 📁 Project Structure
-
-The project uses a standard Terraform structure that separates reusable modules from environment-specific configurations.
-
-
-.
-├── environments/
-│   ├── dev/            # Configuration for the Development environment
-│   ├── staging/        # Configuration for the Staging environment
-│   └── prod/           # Configuration for the Production environment
-│
-└── modules/
-├── eks/            # Reusable module for the EKS Cluster
-├── iam/            # Reusable module for IAM Roles
-├── jenkins/        # Reusable module for Jenkins (Future Work)
-└── vpc/            # Reusable module for the VPC and Networking
-
-
----
 
 ## 🚀 How to Deploy an Environment
 
