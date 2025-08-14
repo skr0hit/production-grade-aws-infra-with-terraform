@@ -7,7 +7,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "my-bucket-for-production-grade-terraform"
-    key    = "dev/terraform.tfstate" # Environment-specific state path
+    key    = "production/terraform.tfstate" # Environment-specific state path
     region = "ap-south-1"
     dynamodb_table = "my-eks-terraform-lock"
   }
@@ -17,7 +17,7 @@ module "vpc" {
   source = "../../modules/vpc"
   cluster_name         = var.cluster_name
   environment          = var.environment
-  vpc_cidr             = var.vpc_cidr_dev
+  vpc_cidr             = var.vpc_cidr_production
   public_subnet_cidrs  = var.public_subnet_cidrs
   private_subnet_cidrs = var.private_subnet_cidrs
 }

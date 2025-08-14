@@ -18,7 +18,7 @@ variable "cluster_name" {
   type        = string
 }
 
-variable "vpc_cidr_dev" {
+variable "vpc_cidr_production" {
   description = "The CIDR block for the VPC."
   type        = string
 }
