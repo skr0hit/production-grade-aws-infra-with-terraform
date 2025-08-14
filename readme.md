@@ -10,8 +10,6 @@ The entire platform is defined using Terraform and is structured to support a mu
 
 The core of this platform is a highly available Amazon EKS cluster deployed within a custom-built, secure VPC. Each environment is completely isolated within its own VPC to ensure stability and prevent cross-environment interference. The infrastructure is designed with a security-first mindset, leveraging private subnets for workloads and tightly controlled network access.
 
-*(A great addition here would be an architecture diagram image)*
-`![Architecture Diagram](path/to/your/diagram.png)`
 
 ---
 
@@ -31,21 +29,7 @@ The core of this platform is a highly available Amazon EKS cluster deployed with
 
 ## 📁 Project Structure
 
-The project uses a standard Terraform structure that separates reusable modules from environment-specific configurations.
-
-
-.
-├── environments/
-│   ├── dev/            # Configuration for the Development environment
-│   ├── staging/        # Configuration for the Staging environment
-│   └── prod/           # Configuration for the Production environment
-│
-└── modules/
-├── eks/            # Reusable module for the EKS Cluster
-├── iam/            # Reusable module for IAM Roles
-├── jenkins/        # Reusable module for Jenkins (Future Work)
-└── vpc/            # Reusable module for the VPC and Networking
-
+<img width="330" height="366" alt="image" src="https://github.com/user-attachments/assets/390d7d26-497c-470a-a588-f720e74741e1" />
 
 ---
 
