@@ -9,6 +9,7 @@ The entire platform is defined using Terraform and is structured to support a mu
 ## 🏛️ Architecture Overview
 
 The core of this platform is a highly available Amazon EKS cluster deployed within a custom-built, secure VPC. Each environment is completely isolated within its own VPC to ensure stability and prevent cross-environment interference. The infrastructure is designed with a security-first mindset, leveraging private subnets for workloads and tightly controlled network access.
+<img width="540" height="546" alt="image" src="https://github.com/user-attachments/assets/989820f2-e4cb-434d-a53c-e35f0046fae4" />
 
 
 ---
