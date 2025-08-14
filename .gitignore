@@ -1,0 +1,23 @@
+# .gitignore for Terraform Projects (Robust Version)
+
+# Ignore Terraform directories and lock files in any subdirectory
+.terraform/
+.terraform.lock.hcl
+
+# Ignore state files and backups
+*.tfstate
+*.tfstate.*
+
+# Ignore plan files
+*.tfplan
+
+# Ignore crash logs
+crash.log
+crash.*.log
+
+# Ignore all .tfvars files (which can contain secrets)
+*.tfvars
+*.tfvars.json
+
+# DO NOT ignore a file named example.tfvars, as it's a safe template
+!example.tfvars
