@@ -6,10 +6,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "my-bucket-for-production-grade-terraform"
+    bucket = "s3-bucket-for-bits-dissertation"
     key    = "dev/terraform.tfstate" # Environment-specific state path
     region = "ap-south-1"
-    dynamodb_table = "my-eks-terraform-lock"
+    dynamodb_table = "state-lock-table"
   }
 }
 
